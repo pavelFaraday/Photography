@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="პროფესიონალი ფოტოგრაფი"> 
+    <meta name="keywords"  content="ფოტოგრაფი, საქორწილო ფოტოების გადაღება, event ფოტოგრაფი">
+    <meta name="author" content="Giorgi Epita">
+    <link rel="stylesheet" href="style.css">
+    <title>ACME | Photography</title>
+</head>
+<body>
+
+<!--თავიდან იწერება RWD პატარა დივაისებისთვის (სმარტფონი) და შემდეგ - ბოლოში ისაზღვრება @media-ით პლანშეტებისთვის და ნოუთბუქებისვის-->
+
+
+
+
+
+
+<main> <!-- main (სემანტიკური თეგი) დაყო 2 ბლოკად: landing | images -->
+
+   <!------ -- -- -- LANDING AREA -- -- -- ------>
+    <div id="landing">
+        
+         <!------ -- -- -- LANDING AREA (1) ტექსტი  -- -- -- ------>
+        <div id="landing-text"> <!-- რამდენიმე ერთი ზომის ბლოკი, აადვილებს მასში მოთავსებული კონტენტის სასურველ დალაგებას -->
+            <div id="landing-text-inner">    <!-- რამდენიმე ერთი ზომის ბლოკი, აადვილებს მასში მოთავსებული კონტენტის სასურველ დალაგებას -->
+                <h1>Acme Photography</h1>
+                <h2>Beautiful Natural Photography</h2>
+                <a href="#images"  class="btn" id="view-work">View Work</a>  <!-- ყურადღებით განიხილე !!!!!!!!!!!!  -->
+            </div>
+        </div>
+
+         <!------ -- -- -- LANDING AREA  (2) image -- -- -- ------>
+        <div id="landing-image"></div>  <!--image-ს CSS-დან ჩავსვავთ-->
+    </div>
+    <!------ -- -- -- LANDING AREA -- -- -- ------>
+  
+
+
+
+
+    <!------ -- -- --IMAGES AREA-- -- -- ------>
+    <div id="images">
+
+    <!------ -- -- --IMAGES AREA  (1)  header-- -- -- ------>   
+        <div id="header">
+            <h2>Our Work</h2>
+        </div>
+
+    <!------ -- -- --IMAGES AREA  (2) ფოტოების კარუსელი-- -- -- ------>
+        <img src="https://source.unsplash.com/1600x900/?nature,water" alt="unplash">
+        <!-- ფოტოები ავტომატურად გადადის -->
+        <div class="caption">
+            <h3>Photo One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+
+        <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="unplash">
+        <!-- ფოტოები ავტომატურად გადადის -->
+        <div class="caption">
+            <h3>Photo Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+
+        <img src="https://source.unsplash.com/1600x900/?nature,flowers" alt="unplash">
+        <!-- ფოტოები ავტომატურად გადადის -->
+        <div class="caption">
+            <h3>Photo Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+
+        <img src="https://source.unsplash.com/1600x900/?nature,animals" alt="unplash">
+        <!-- ფოტოები ავტომატურად გადადის -->
+        <div class="caption">
+            <h3>Photo Four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+
+        <img src="https://source.unsplash.com/1600x900/?nature,clouds" alt="unplash">
+        <!-- ფოტოები ავტომატურად გადადის -->
+        <div class="caption">
+            <h3>Photo One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+    </div>
+    <!------ -- -- --IMAGES AREA-- -- -- ------>
+
+</main>
+
+
+<footer>
+    <h1>Get In Touch</h1>
+    <p>Please call or email us to set up a consult</p>
+    <p>Emal: <strong>contact@acmephoto.test</strong></p>
+    <p>Phone: <strong>(651) 555-5555</strong></p>
+</footer>
+   
+
+
+<!-- https://code.jquery.com/  >>> jQuery 3.x  >>>  minified  >>> დააკოპირე კოდი და ჩასვი body თეგის ბოლოს.   შემდეგ მიუწერე javascript-ის ფაილის fath -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+
+
+
+
+</body>
+</html>

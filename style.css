@@ -1,0 +1,153 @@
+/* ჯერ fonts.google.com-დან დავაკოპირებთ @import.. კოდს და ჩავაფეისტებთ css ფაილში. შემდეგ იგივე საიტზე დავაკოპირებთ font-family-ს და დავწერთ CSS ფაილში*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem; /* 2.5ჯერ დიდი - 16px*2.5=40px */    
+    margin: 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+main {
+    margin: auto;  /* ბლოკის დაცენტრება */
+    max-width: 900px;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0,0.4), -30px 0px 40px rgba(0, 0, 0,0.4);  /*   დააკოპირე  */
+}
+
+#landing { 
+    background-color: white;
+}
+
+
+
+ /*  გასამეორებელია !!!!!!!!!  გასათვალისწინებელია !!!!!!!!!!!!!!!!  */
+#landing-text { /* რამდენიმე ერთი ზომის ბლოკი, აადვილებს მასში მოთავსებული კონტენტის სასურველ დალაგებას */
+    display: flex;
+    flex: 0 1 40vw; /* ანუ სიგრძეში იქნება დივაისის ეკრანის 40% (1vw = 1% of viewport (ეკრანის) width.) */
+    height: 50vh; /* ანუ სიმაღლეში იქნება ეკრანის ნახევარი, მთლიანი არის 100vh (1vh = 1% of viewport (ეკრანის) height.)*/
+    justify-content: center; /* ჰორიზონტალურად ალაგებს flex კონტენტს */
+    align-items: center; /* ვერტიკალურად ალაგებს flex კონტენტს */
+    text-align: center;
+    padding-right: 1rem  /* 2rem, which translates to 2x the browser's font size. ბრაუზერის ნაგულისხმევი font-size=16px-ია.1? ანუ  ამ შემთხვევაში 16px*/
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+
+ /*  გასამეორებელია !!!!!!!!!  გასათვალისწინებელია !!!!!!!!!!!!!!!!  */
+#landing-image { 
+    background: url('img/nathan-dumlao-609934-unsplash.jpg') no-repeat center / cover; 
+    height: 50vh;
+    flex: 0 1 60vw;  /* flex რომ არ მივუთითოთ, სხვანაირად წარმოაჩანს, რადგან ზემოთ - ძმა ბლოკზე display:flex მოვნიშნეთ*/
+    margin: 0;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px #ccc solid;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 2rem 0 0 0; /* ანუ ზემოდან 2X16 = 32px*/
+    padding: 0.5rem 2rem; /* 8px 32px*/
+    color: #333;
+    transition: background 500ms ease; /*ანუ მიმართვა ხდება background-ზე*/
+}
+
+
+.btn:hover  {
+    background: #f4f4f4;
+}
+
+
+
+
+
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+
+#header h2 {
+   border-left: 1px dotted white;
+   border-right: 1px dotted white;
+   display: inline-block;
+   padding: 0 1rem;
+}
+
+
+.caption {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h1 {
+    font-size: 3rem;
+    padding-bottom: 0;
+}
+
+
+
+/*   Screen sizes 500px and up  */
+@media only screen and (min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;  /* გვინდა რომ #landing-text და #landing-image 500px-ზე ზემოთ ეკრანის სიგრძის 100% დაიკავოს. ამიტომ აქაც - მშობელ ბლოკში და ქვემოთაც უნდა გავუწეროთ Height (vh-ბით)  */
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+
+    main {
+        max-width: 80%;
+    }
+}
+
+
+/*   Screen sizes 700px and up  */
+    @media only screen and (min-width: 700px) {
+        .btn {
+            padding: 1rem 3rem;
+        }
+    }
